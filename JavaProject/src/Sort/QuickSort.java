@@ -7,7 +7,7 @@ package Sort;
 			平均情况	最坏情况	最好情况
 	快速排序	O(nlog2n)	O(n2)	O(nlog2n)	O(log2n)	不稳定	较复杂
  */
-public class QuickSort {
+public class QuickSort implements SortAble{
 
 	public static void main(String[] args) {
 		int[] array = new int[] { 1, 2, 3, 4, 5, 5, 4, 3, 2, 1 };
@@ -69,5 +69,12 @@ public class QuickSort {
 
 		quickSort(array, startIndex, boundary - 1);
 		quickSort(array, boundary + 1, endIndex);
+	}
+
+	public int[] sort(int[] array) {
+		if(array == null)
+			return null;
+		quickSort(array, 0, array.length - 1);
+		return array;
 	}
 }
