@@ -1,5 +1,7 @@
 package ResChain;
-
+/**
+ * 责任链模式
+ */
 public abstract class Handler {
 	
 	private Handler nextHandler;
