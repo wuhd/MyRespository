@@ -3,10 +3,9 @@ package Sort;
 //import java.util.Arrays;
 
 /**
- * 快速排序
- * 
- * @author wuhd
- * @since 2018/03/29 11:37
+	排序方法	时间复杂度						空间复杂度	稳定性	复杂性
+			平均情况	最坏情况	最好情况
+	快速排序	O(nlog2n)	O(n2)	O(nlog2n)	O(log2n)	不稳定	较复杂
  */
 public class QuickSort {
 
