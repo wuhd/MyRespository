@@ -1,5 +1,7 @@
 package com.java.learning.designmode;
-
+/**
+ * 具体的观察者对象
+ */
 public class ConcreteObserver implements Observer {
 
 	private String observerState;
