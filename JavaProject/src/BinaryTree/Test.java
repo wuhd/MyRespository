@@ -9,7 +9,6 @@ public class Test {
 		for (int i = 0; i < input.length; i++) {
 			tree.insert(input[i]);
 		}
-		System.out.println("ºóÐò±éÀú(µÝ¹é)");
 		postderTravelsalRec(tree.root);
 	}
 
