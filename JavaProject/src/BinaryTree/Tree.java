@@ -14,13 +14,11 @@ public class Tree<AnyType extends Comparable<? super AnyType>> {
 		}
 
 		int compareResult = x.compareTo(t.treeID);
-
 		if (compareResult < 0) {
 			t.left = insert(x, t.left);
 		} else if (compareResult > 0) {
 			t.right = insert(x, t.right);
 		}
-
 		return t;
 	}
 
