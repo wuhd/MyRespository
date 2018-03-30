@@ -56,14 +56,14 @@ public class BinaryTreeUtil {
 	public static ArrayList<Integer> printFromTopToBottom(TreeNode root) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		Queue<TreeNode> queue = new ArrayBlockingQueue<TreeNode>(100);
-		// 最右子节点
+		// 当前行最右子节点
 		TreeNode last = root;
-		// 下一个最右子节点
+		// 下一行最右子节点
 		TreeNode nLast = root;
 		queue.add(root);
 
 		while (!queue.isEmpty()) {
-			//队首
+			// 队首
 			TreeNode out = queue.poll();
 			System.out.print(out.treeID + " ");
 			list.add(Integer.parseInt(out.treeID));
@@ -84,7 +84,5 @@ public class BinaryTreeUtil {
 
 		return list;
 	}
-	
-	
 
 }
