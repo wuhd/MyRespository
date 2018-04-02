@@ -7,11 +7,12 @@ import java.net.URLClassLoader;
 /*
  * AppClassLoader
  * ExtClassLoader
+ * BootstrapClassLoader
  */
 public class ClassLoaderDemo {
 
 	public static void main(String[] args)  {
-		// 1打印ClassLoaderDemo的类加载classLoader路径
+		// 1打印ClassLoaderDemo的类加载AppClassLoader路径
 		Class classMain = ClassLoaderDemo.class;
 		ClassLoader classLoader = classMain.getClassLoader();
 		System.out.println("classLoader :" + classLoader);
