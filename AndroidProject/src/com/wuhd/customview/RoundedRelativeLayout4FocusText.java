@@ -7,6 +7,7 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.util.AttributeSet;
 
+
 public class RoundedRelativeLayout4FocusText extends android.widget.RelativeLayout implements android.view.View.OnFocusChangeListener {
 
 	int radiu = 5;

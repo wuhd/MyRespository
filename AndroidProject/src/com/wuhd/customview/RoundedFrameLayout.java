@@ -26,6 +26,7 @@ public class RoundedFrameLayout extends android.widget.FrameLayout {
 		if (Build.VERSION.SDK_INT < 18)
 			setLayerType(LAYER_TYPE_SOFTWARE, null);
 	}
+	
 
 	@Override
 	protected void dispatchDraw(Canvas canvas) {

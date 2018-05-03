@@ -20,6 +20,7 @@ public class RoundedRelativeLayout extends android.widget.RelativeLayout {
 		init();
 	}
 	
+	
 	private void init() {
 		if (Build.VERSION.SDK_INT < 18)
 			setLayerType(LAYER_TYPE_SOFTWARE, null);

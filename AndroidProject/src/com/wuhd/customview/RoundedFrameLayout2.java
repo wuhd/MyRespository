@@ -148,6 +148,7 @@ public class RoundedFrameLayout2 extends FrameLayout {
 		}
 	}
 
+	
 	private void drawBottomRight(Canvas canvas) {
 		if (bottomRightRadius > 0) {
 			int height = getHeight();
